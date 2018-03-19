@@ -130,6 +130,9 @@ h1, h2, h3, h4, h5, h6 {
 /*--------------------------------------------------------------
 # Intro Section
 --------------------------------------------------------------*/
+#introCarousel{
+  font-size: 1.1rem;
+}
 #intro {
   display: table;
   width: 100%;
@@ -1502,4 +1505,27 @@ body.mobile-nav-active #mobile-nav-toggle {
   top: 20px;
   right: 45px;
   font-size: 60px;
+}
+
+#order {
+  background: #fff;
+  background-size: cover;
+  padding: 60px 0 40px 0;
+}
+#order .container .row .col-md-6{
+  margin:0 auto;
+}
+#submitOrder {
+  background: #fe8206;
+  border: 0;
+  padding: 10px 30px;
+  margin-left: 30%;
+  color: #fff;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+#submitOrder:hover {
+  background: #13a456;
+
 }
