@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
@@ -47,8 +47,9 @@
       <nav id="nav-menu-container">
         <ul class="nav-menu">
           <li class="menu-active"><a href="#intro">Početak</a></li>
+            <li><a href="#" id="popup">Proizvodi i usluge</a></li>
           <li><a href="#about">O Nama</a></li>
-          <li><a href="#" id="popup">Usluge</a></li>
+          <li><a href="#metodologies" >Način razvoja</a></li>
           <li><a href="#portfolio">Portfolio</a></li>
           <li><a href="#team">Tim</a></li>
           <li><a href="#contact">Kontakt</a></li>
@@ -72,10 +73,10 @@
             <div class="carousel-background"><img src="img/intro-carousel/1.JPG" alt=""></div>
             <div class="carousel-container">
               <div class="carousel-content">
-                <h2>We are professional</h2>
+                <h2>Eurobit poslovni informacioni sistem (ERP)</h2>
                 <p>Našim inženjerskim rješenjima do Vašeg uspjeha</p>
-                <a href="#featured-services" class="btn-get-started scrollto">Saznajte Više</a>
-                  <a href="#" id="orderLink" class="btn-get-started">Naruči</a>
+                <a href="#" id="erpLink" class="btn-get-started scrollto">Saznajte Više</a>
+                <a href="#" id="orderLink" class="btn-get-started">Naruči</a>
               </div>
             </div>
           </div>
@@ -94,7 +95,7 @@
                      Kontrola zaliha i potraživanja<br>
 
                     Rezultati iznad očekivanja.</p>
-                <a href="#featured-services" class="btn-get-started scrollto">Saznajte Više</a>
+                <a href="#" id="bussinesLink" class="btn-get-started scrollto">Saznajte Više</a>
               </div>
             </div>
           </div>
@@ -103,9 +104,14 @@
             <div class="carousel-background"><img src="img/intro-carousel/3.jpg" alt=""></div>
             <div class="carousel-container">
               <div class="carousel-content">
-                <h2>Temporibus autem quibusdam</h2>
-                <p>Beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt omnis iste natus error sit voluptatem accusantium.</p>
-                <a href="#featured-services" class="btn-get-started scrollto">Saznajte Više</a>
+                <h2>eMSS - Eurobit Mobile Sales System</h2>
+                <p> Sve potrebne informacije u ruci<br>
+                    Uspješnija prodaja<br>
+                    Brža obrada narudžbi<br>
+                    Zadovoljniji kupci<br>
+                    Besplatno testiranje<br>
+                </p>
+                <a href="https://mss.eurobit.ba/" target="_blank" class="btn-get-started scrollto">Saznajte Više</a>
               </div>
             </div>
           </div>
@@ -114,9 +120,8 @@
             <div class="carousel-background"><img src="img/intro-carousel/4.jpg" alt=""></div>
             <div class="carousel-container">
               <div class="carousel-content">
-                <h2>Nam libero tempore</h2>
-                <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum.</p>
-                <a href="#featured-services" class="btn-get-started scrollto">Saznajte Više</a>
+                <h2>Metodologije</h2>
+                <a href="#metodologies" class="btn-get-started scrollto">Saznajte Više</a>
               </div>
             </div>
           </div>
@@ -125,8 +130,11 @@
             <div class="carousel-background"><img src="img/intro-carousel/5.jpg" alt=""></div>
             <div class="carousel-container">
               <div class="carousel-content">
-                <h2>Magnam aliquam quaerat</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <h2>Usluge servisa</h2>
+                  <!--
+
+                 @TODO neka mi pada onaj modal s linkovima usluga
+                  -->
                 <a href="#featured-services" class="btn-get-started scrollto">Saznajte Više</a>
               </div>
             </div>
@@ -159,20 +167,21 @@
 
           <div class="col-lg-4 box">
             <i class="fa fa-globe"></i>
-            <h4 class="title"><a href="">Web</a></h4>
+            <h4 class="title"><a href="#" id="webLink">Web</a></h4>
             <p class="description">Povećana upotreba interneta dovela je do velike rasprostranjenosti web aplikacija koje iz dana u dan sve više zamjenjuju klasične desktop aplikacije.</p>
           </div>
 
           <div class="col-lg-4 box box-bg">
             <i class="fa fa-gears"></i>
-            <h4 class="title"><a href="">ERP</a></h4>
+            <h4 class="title"><a href="#" id="erpLink2">ERP</a></h4>
             <p class="description">Tokom dugogodišnjeg korištenja naš poslovni informacioni sistem je implementiran na preko hiljadu lokacija.</p>
           </div>
 
           <div class="col-lg-4 box">
             <i class="fas fa-mobile-alt"></i>
-            <h4 class="title"><a href="">Mobile</a></h4>
-            <p class="description">Kreiramo i razvijamo mobilne aplikacije od pisanja prve linije koda do procesa objave prve verzije na store-u.</p>
+            <h4 class="title"><a href="#" id="mobileModalLink">Mobile</a></h4>
+            <p class="description">Od ideje i prve linije koda do
+                od ideje i prve linije koda do objave na store-u.</p>
           </div>
 
         </div>
@@ -198,9 +207,10 @@
                 <img src="img/about-mission.jpg" alt="" class="img-fluid">
                 <div class="icon"><i class="ion-ios-speedometer-outline"></i></div>
               </div>
-              <h2 class="title"><a href="#">Our Mission</a></h2>
+              <h2 class="title"><a href="#testimonials" class="scrollto">Naši principi</a></h2>
               <p>
-                Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                U svakodnevnom radu se želimo da sa korisnicima razvijemo dugoročne i prijateljske odnose i da im pomognemo u postizanju poslovnih ciljeva.
+                Želimo da se naši uposlenici imaju vrhunske uslove rada i da postignu zdrav balans između privatnog i poslovnog života
               </p>
             </div>
           </div>
@@ -211,9 +221,10 @@
                 <img src="img/about-plan.jpg" alt="" class="img-fluid">
                 <div class="icon"><i class="ion-ios-list-outline"></i></div>
               </div>
-              <h2 class="title"><a href="#">Our Plan</a></h2>
+              <h2 class="title"><a href="#clients" class="scrollto">Naši korisnici</a></h2>
               <p>
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem  doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+                Odnosi koje smo razvili sa korisnicima su ogledalo naših rezulata. Sretni smo što je saradnja sa većinom naših korisnika dostigla punoljetstvo.
+                Ponosni što smo prepoznati kao firma sa kojom korisnici žele poklonito povjerenje, raditi i širiti saradnju.
               </p>
             </div>
           </div>
@@ -224,9 +235,15 @@
                 <img src="img/about-vision.jpg" alt="" class="img-fluid">
                 <div class="icon"><i class="ion-ios-eye-outline"></i></div>
               </div>
-              <h2 class="title"><a href="#">Our Vision</a></h2>
+              <h2 class="title"><a class="scrollto" href="#facts">Historija</a></h2>
               <p>
-                Nemo enim ipsam voluptatem quia voluptas sit aut odit aut fugit, sed quia magni dolores eos qui ratione voluptatem sequi nesciunt Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet.
+                  1991 – Bitsoft – vizija od prvog dana<br>
+
+                  2001 – EuroBit se rodio! Novo ime, stara ideja<br>
+
+                  2012 – Nova lokacija, ugodniji prostor za rad<br>
+
+                  2016 – Proširujemo usluge i kapacitete. Od male firme postali smo respektabilan tim sposoban da ispuni zahtjeve korisnika.
               </p>
             </div>
           </div>
@@ -240,7 +257,7 @@
     <!--==========================
       Services Section
     ============================-->
-    <section id="servicess" class="overlay">
+    <section id="services" class="overlay">
       <a href="javascript:void(0)" class="closebtn" id="closebtn">&times;</a>
       <div class="container">
         <header class="section-header ">
@@ -249,36 +266,73 @@
         </header>
         <div class="row">
 
-          <div class="col-lg-4 col-md-6 ">
-            <div class="icon"><i class="ion-ios-analytics-outline"></i></div>
-            <h4 class="title"><a href="">ERP</a></h4>
+            <div class="col-lg-4 col-md-6 ">
+            <div class="icon"><i class="fa fa-gears"></i></div>
+            <h5 class="title"><a href="">ERP</a></h5>
             <p class="description">Tokom dugogodišnjeg korištenja naš poslovni informacioni sistem je implementiran na preko hiljadu lokacija.</p>
           </div>
-          <div class="col-lg-4 col-md-6 " >
-            <div class="icon"><i class="ion-ios-bookmarks-outline"></i></div>
-            <h4 class="title"><a href="">Web</a></h4>
+            <div class="col-lg-4 col-md-6 " >
+            <div class="icon"><i class="ion-android-globe"></i></div>
+            <h5 class="title"><a href="">Web</a></h5>
             <p class="description">Povećana upotreba interneta dovela je do velike rasprostranjenosti web aplikacija koje iz dana u dan sve više zamjenjuju klasične desktop aplikacije.</p>
           </div>
-          <div class="col-lg-4 col-md-6 ">
-            <div class="icon"><i class="ion-ios-paper-outline"></i></div>
-            <h4 class="title"><a href="">Mobile</a></h4>
+            <div class="col-lg-4 col-md-6 ">
+            <div class="icon"><i class="fa fa-mobile"></i></div>
+            <h5 class="title"><a href="#">Mobile</a></h5>
             <p class="description">Kreiramo i razvijamo mobilne aplikacije od pisanja prve linije koda do procesa objave prve verzije na store-u.</p>
           </div>
-          <div class="col-lg-4 col-md-6 " >
-            <div class="icon"><i class="ion-ios-speedometer-outline"></i></div>
-            <h4 class="title"><a href="">Fiskalni uređaji</a></h4>
+            <div class="col-lg-4 col-md-6 " >
+            <div class="icon"><i class="fa fa-dollar"></i></div>
+            <h5 class="title"><a href="">Fiskalni uređaji</a></h5>
             <p class="description">U proces fiskalizacije FBiH smo uključeni od njegovog planiranja i osigurali smo podršku za uređaje svih relevantnih proizvođača za naše POS i ERP aplikacije.</p>
           </div>
-          <div class="col-lg-4 col-md-6 ">
-            <div class="icon"><i class="ion-ios-barcode-outline"></i></div>
-            <h4 class="title"><a href="">Business intelligence</a></h4>
+            <div class="col-lg-4 col-md-6 ">
+            <div class="icon"><i class="fa fa-briefcase"></i></div>
+            <h5 class="title"><a href="">Business intelligence</a></h5>
             <p class="description">Iza svake odluke menadžera ili finansijskog analitičara stoje informacije koje se temelje na dobro ili loše organizovanim podacima.</p>
           </div>
-          <div class="col-lg-4 col-md-6 ">
-            <div class="icon"><i class="ion-ios-people-outline"></i></div>
-            <h4 class="title"><a href="">VoIP</a></h4>
+            <div class="col-lg-4 col-md-6 ">
+            <div class="icon"><i class="fa fa-phone"></i></div>
+            <h5 class="title"><a href="">VoIP</a></h5>
             <p class="description">Naše UC rješenje pokreću provjerene i pouzdane open-source tehnologije, koje u fokusu imaju Linux i Asterisk.</p>
           </div>
+
+            <div class="col-lg-4 col-md-6 ">
+                <div class="icon"><i class="fa fa-balance-scale"></i></div>
+                <h5 class="title"><a href="">Sistem mobilne prodaje (eMSS)</a></h5>
+                <p class="description">Naručivanje putem mobitela ili tableta<br> Pregled cijena i stanja zaliha na terenu <br> Hodogrami i rute</p>
+            </div>
+            <div class="col-lg-4 col-md-6 " >
+                <div class="icon"><i class="fa fa-handshake"></i></div>
+                <h5 class="title"><a href="">Program lojalnosti (LCP)</a></h5>
+                <p class="description">Kako se približiti kupcima? Možemo Vam pomoći.</p>
+            </div>
+            <div class="col-lg-4 col-md-6 ">
+                <div class="icon"><i class="fa fa-pencil"></i></div>
+                <h5 class="title"><a href="">Evidencija radnog vremena (eRAD)</a></h5>
+                <p class="description">Fleksibilno rješenje u skladu sa zakonskim odredbama</p>
+            </div>
+            <div class="col-lg-4 col-md-6 " >
+                <div class="icon"><i class="fa fa-building"></i></div>
+                <h5 class="title"><a href="">Upravljanje skladištem (eWMS)</a></h5>
+                <p class="description">
+                    Evidencija prijema i isporuka robe
+                    <br>Inventure
+                    <br>Pregled zaliha
+                </p>
+            </div>
+            <div class="col-lg-4 col-md-6 ">
+                <div class="icon"><i class="fa fa-comment"></i></div>
+                <h5 class="title"><a href="">Usluge savjetovanja i projektovanja
+                </a></h5>
+                <p class="description">Naše dugogodišnje iskustvo i posvećenost
+                    su u službi Vašeg razoja i uspjeha.</p>
+            </div>
+            <div class="col-lg-4 col-md-6 ">
+                <div class="icon"><i class="fa fa-cog"></i></div>
+                <h5 class="title"><a href="">Servis i održavanje</a></h5>
+                <p class="description">Prepustite nam kompletno održavanje svoje računarske mreže. </p>
+            </div>
 
         </div>
 
@@ -290,9 +344,8 @@
     ============================-->
     <section id="call-to-action" class="wow fadeIn">
       <div class="container text-center">
-        <h3>Eurobit</h3>
-        <p>Postoji od 2001. godine. Moderniji pristup i organizaciona struktura, sve u cilju kvalitetnijih usluga za klijente.</p>
-        <a class="cta-btn" href="#team">Upoznajte naš tim</a>
+
+        <a class="cta-btn scrollto" href="#team">Upoznajte naš tim</a>
       </div>
     </section><!-- #call-to-action -->
 
@@ -305,6 +358,32 @@
 
       </div>
     </section>
+
+      <!--==========================
+     Team Section
+   ============================-->
+      <section id="metodologies">
+          <div class="container">
+              <div class="section-header wow fadeInUp">
+                  <h3>Način razvoja</h3>
+                  <p>Metodologija i tehnologije</p>
+              </div>
+              <div class="row">
+                  <div class="col-md-12 wow fadeInUp ">
+                      <div class="row">
+                          <div class="col-md-6" style="border-right: 1px solid #fe8206;">
+                            <img src="img/methodologies.png" class="img-fluid" alt="">
+                          </div>
+                          <div class="col-md-6">
+                              <img src="img/technologies.png" class="img-fluid" alt="">
+                          </div>
+                      </div>
+
+                  </div>
+              </div>
+
+          </div>
+      </section><!-- #team -->
 
     <!--==========================
       Facts Section
@@ -349,7 +428,7 @@
   			</div>
 
         <div class="facts-img">
-          <img src="img/facts-img.png" alt="" class="img-fluid">
+          <img src="img/facts-img1.png" alt="" class="img-fluid">
         </div>
 
       </div>
@@ -368,150 +447,274 @@
         <div class="row">
           <div class="col-lg-12">
             <ul id="portfolio-flters">
-              <li data-filter="*" class="filter-active">Svi</li>
-              <li data-filter=".filter-app">Aplikacije</li>
-              <li data-filter=".filter-web">Web</li>
+                <li data-filter="*" class="filter-active">Svi</li>
+                <li data-filter=".filter-erp">ERP</li>
+                <li data-filter=".filter-android">Android</li>
+                <li data-filter=".filter-web">Web</li>
+                <li data-filter=".filter-ios">iOS</li>
+                <li data-filter=".filter-razvoj">Namjenski razvoj</li>
             </ul>
           </div>
         </div>
 
         <div class="row portfolio-container">
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp">
+            <div class="col-lg-4 col-md-6 portfolio-item filter-erp wow fadeInUp">
             <div class="portfolio-wrap">
               <figure>
-                <img src="img/portfolio/emss1.png" class="img-fluid" alt="">
-                <a href="img/portfolio/emss1.png" data-lightbox="portfolio" data-title="Mobile Sales System" class="link-preview" title="Preview"><i class="ion ion-eye"></i></a>
-                <a href="#" class="link-details mobile-sales-link" title="Više detalja"><i class="ion ion-android-open"></i></a>
+                <img src="img/portfolio/VP.JPG" class="img-fluid" alt="">
+                <a href="img/portfolio/VP.JPG" class="link-preview" data-lightbox="portfolio" data-title="Web 2" title="Preview"><i class="ion ion-eye"></i></a>
               </figure>
 
               <div class="portfolio-info">
-                <h4><a href="#" class="mobile-sales-link">Mobile Sales System</a></h4>
-                <p>Aplikacija + Web</p>
+                <h4><a href="#">Veleprodaja</a></h4>
+                <p>ERP</p>
               </div>
             </div>
           </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web wow fadeInUp" data-wow-delay="0.1s">
+            <div class="col-lg-4 col-md-6 portfolio-item filter-erp wow fadeInUp" data-wow-delay="0.1s">
             <div class="portfolio-wrap">
               <figure>
-                <img src="img/portfolio/web3.jpg" class="img-fluid" alt="">
-                <a href="img/portfolio/web3.jpg" class="link-preview" data-lightbox="portfolio" data-title="Web 3" title="Preview"><i class="ion ion-eye"></i></a>
-                <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+                <img src="img/portfolio/MP.JPG" class="img-fluid" alt="">
+                <a href="img/portfolio/MP.JPG" class="link-preview" data-lightbox="portfolio" data-title="App 3" title="Preview"><i class="ion ion-eye"></i></a>
+
               </figure>
 
               <div class="portfolio-info">
-                <h4><a href="#">Web 3</a></h4>
-                <p>Web</p>
+                <h4><a href="#">Maloprodaja</a></h4>
+                <p>ERP</p>
               </div>
             </div>
           </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp" data-wow-delay="0.2s">
+            <div class="col-lg-4 col-md-6 portfolio-item filter-erp wow fadeInUp" data-wow-delay="0.2s">
             <div class="portfolio-wrap">
               <figure>
-                <img src="img/portfolio/app2.jpg" class="img-fluid" alt="">
-                <a href="img/portfolio/app2.jpg" class="link-preview" data-lightbox="portfolio" data-title="App 2" title="Preview"><i class="ion ion-eye"></i></a>
-                <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+                <img src="img/portfolio/pos.jpg" class="img-fluid" alt="">
+                <a href="img/portfolio/pos.jpg" class="link-preview" data-lightbox="portfolio" data-title="Web 1" title="Preview"><i class="ion ion-eye"></i></a>
+
               </figure>
 
-              <div class="portfolio-info">
-                <h4><a href="#">App 2</a></h4>
-                <p>App</p>
-              </div>
+                <div class="portfolio-info">
+                <h4><a href="#">POS kasa</a></h4>
+                <p>ERP</p>
+                </div>
+                </div>
             </div>
-          </div>
 
-          <!--<div class="col-lg-4 col-md-6 portfolio-item filter-card wow fadeInUp">
-            <div class="portfolio-wrap">
-              <figure>
-                <img src="img/portfolio/card2.jpg" class="img-fluid" alt="">
-                <a href="img/portfolio/card2.jpg" class="link-preview" data-lightbox="portfolio" data-title="Card 2" title="Preview"><i class="ion ion-eye"></i></a>
-                <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
-              </figure>
+            <div class="col-lg-4 col-md-6 portfolio-item filter-erp wow fadeInUp">
+                <div class="portfolio-wrap">
+                    <figure>
+                        <img src="img/portfolio/fakturisanje.jpg" class="img-fluid" alt="">
+                        <a href="img/portfolio/fakturisanje.jpg" class="link-preview" data-lightbox="portfolio" data-title="Web 2" title="Preview"><i class="ion ion-eye"></i></a>
 
-              <div class="portfolio-info">
-                <h4><a href="#">Card 2</a></h4>
-                <p>Card</p>
-              </div>
+                    </figure>
+
+                    <div class="portfolio-info">
+                        <h4><a href="#">Fakturisanje</a></h4>
+                        <p>ERP</p>
+                    </div>
+                </div>
             </div>
-          </div>-->
+            <div class="col-lg-4 col-md-6 portfolio-item filter-erp wow fadeInUp" data-wow-delay="0.1s">
+                <div class="portfolio-wrap">
+                    <figure>
+                        <img src="img/portfolio/ostalo.png" class="img-fluid" alt="">
+                        <a href="img/portfolio/ostalo.png" class="link-preview" data-lightbox="portfolio" data-title="App 3" title="Preview"><i class="ion ion-eye"></i></a>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web wow fadeInUp" data-wow-delay="0.1s">
-            <div class="portfolio-wrap">
-              <figure>
-                <img src="img/portfolio/web2.jpg" class="img-fluid" alt="">
-                <a href="img/portfolio/web2.jpg" class="link-preview" data-lightbox="portfolio" data-title="Web 2" title="Preview"><i class="ion ion-eye"></i></a>
-                <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
-              </figure>
+                    </figure>
 
-              <div class="portfolio-info">
-                <h4><a href="#">Web 2</a></h4>
-                <p>Web</p>
-              </div>
+                    <div class="portfolio-info">
+                        <h4><a href="#">Proizvodnja</a></h4>
+                        <p>ERP</p>
+                    </div>
+                </div>
             </div>
-          </div>
+            <div class="col-lg-4 col-md-6 portfolio-item filter-erp wow fadeInUp" data-wow-delay="0.2s">
+                <div class="portfolio-wrap">
+                    <figure>
+                        <img src="img/portfolio/ostalo.png" class="img-fluid" alt="">
+                        <a href="img/portfolio/ostalo.png" class="link-preview" data-lightbox="portfolio" data-title="Web 1" title="Preview"><i class="ion ion-eye"></i></a>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp" data-wow-delay="0.2s">
-            <div class="portfolio-wrap">
-              <figure>
-                <img src="img/portfolio/app3.jpg" class="img-fluid" alt="">
-                <a href="img/portfolio/app3.jpg" class="link-preview" data-lightbox="portfolio" data-title="App 3" title="Preview"><i class="ion ion-eye"></i></a>
-                <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
-              </figure>
+                    </figure>
 
-              <div class="portfolio-info">
-                <h4><a href="#">App 3</a></h4>
-                <p>App</p>
-              </div>
+                    <div class="portfolio-info">
+                        <h4><a href="#">Ugostiteljstvo</a></h4>
+                        <p>ERP</p>
+                    </div>
+                </div>
             </div>
-          </div>
 
-          <!--<div class="col-lg-4 col-md-6 portfolio-item filter-card wow fadeInUp">
-            <div class="portfolio-wrap">
-              <figure>
-                <img src="img/portfolio/card1.jpg" class="img-fluid" alt="">
-                <a href="img/portfolio/card1.jpg" class="link-preview" data-lightbox="portfolio" data-title="Card 1" title="Preview"><i class="ion ion-eye"></i></a>
-                <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
-              </figure>
+            <div class="col-lg-4 col-md-6 portfolio-item filter-erp wow fadeInUp">
+                <div class="portfolio-wrap">
+                    <figure>
+                        <img src="img/portfolio/knjig.jpg" class="img-fluid" alt="">
+                        <a href="img/portfolio/knjig.jpg" class="link-preview" data-lightbox="portfolio" data-title="Web 2" title="Preview"><i class="ion ion-eye"></i></a>
 
-              <div class="portfolio-info">
-                <h4><a href="#">Card 1</a></h4>
-                <p>Card</p>
-              </div>
+                    </figure>
+
+                    <div class="portfolio-info">
+                        <h4><a href="#">Knjigovodstvo</a></h4>
+                        <p>ERP</p>
+                    </div>
+                </div>
             </div>
-          </div>-->
+            <div class="col-lg-4 col-md-6 portfolio-item filter-erp wow fadeInUp" data-wow-delay="0.1s">
+                <div class="portfolio-wrap">
+                    <figure>
+                        <img src="img/portfolio/osn.jpg" class="img-fluid" alt="">
+                        <a href="img/portfolio/osn.jpg" class="link-preview" data-lightbox="portfolio" data-title="App 3" title="Preview"><i class="ion ion-eye"></i></a>
 
-          <!--<div class="col-lg-4 col-md-6 portfolio-item filter-card wow fadeInUp" data-wow-delay="0.1s">
-            <div class="portfolio-wrap">
-              <figure>
-                <img src="img/portfolio/card3.jpg" class="img-fluid" alt="">
-                <a href="img/portfolio/card3.jpg" class="link-preview" data-lightbox="portfolio" data-title="Card 3" title="Preview"><i class="ion ion-eye"></i></a>
-                <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
-              </figure>
+                    </figure>
 
-              <div class="portfolio-info">
-                <h4><a href="#">Card 3</a></h4>
-                <p>Card</p>
-              </div>
+                    <div class="portfolio-info">
+                        <h4><a href="#">Osnovna sredstva</a></h4>
+                        <p>ERP</p>
+                    </div>
+                </div>
             </div>
-          </div>-->
+            <div class="col-lg-4 col-md-6 portfolio-item filter-erp wow fadeInUp" data-wow-delay="0.2s">
+                <div class="portfolio-wrap">
+                    <figure>
+                        <img src="img/portfolio/ostalo.png" class="img-fluid" alt="">
+                        <a href="img/portfolio/ostalo.png" class="link-preview" data-lightbox="portfolio" data-title="Web 1" title="Preview"><i class="ion ion-eye"></i></a>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web wow fadeInUp" data-wow-delay="0.2s">
-            <div class="portfolio-wrap">
-              <figure>
-                <img src="img/portfolio/web1.jpg" class="img-fluid" alt="">
-                <a href="img/portfolio/web1.jpg" class="link-preview" data-lightbox="portfolio" data-title="Web 1" title="Preview"><i class="ion ion-eye"></i></a>
-                <a href="#" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
-              </figure>
+                    </figure>
 
-              <div class="portfolio-info">
-                <h4><a href="#">Web 1</a></h4>
-                <p>Web</p>
-              </div>
+                    <div class="portfolio-info">
+                        <h4><a href="#">Obračun plata</a></h4>
+                        <p>ERP</p>
+                    </div>
+                </div>
             </div>
-          </div>
 
+            <div class="col-lg-4 col-md-6 portfolio-item filter-erp filter-razvoj wow fadeInUp">
+                <div class="portfolio-wrap">
+                    <figure>
+                        <img src="img/portfolio/ostalo.png" class="img-fluid" alt="">
+                        <a href="img/portfolio/ostalo.png" class="link-preview" data-lightbox="portfolio" data-title="Web 1" title="Preview"><i class="ion ion-eye"></i></a>
+
+                    </figure>
+
+                    <div class="portfolio-info">
+                        <h4><a href="#">Obračun komunalnih usluga</a></h4>
+                        <p>ERP & Namjenski razvoj</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 portfolio-item filter-erp filter-razvoj wow fadeInUp" data-wow-delay="0.1s">
+                <div class="portfolio-wrap">
+                    <figure>
+                        <img src="img/portfolio/ostalo.png" class="img-fluid" alt="">
+                        <a href="img/portfolio/ostalo.png" class="link-preview" data-lightbox="portfolio" data-title="Web 1" title="Preview"><i class="ion ion-eye"></i></a>
+
+                    </figure>
+
+                    <div class="portfolio-info">
+                        <h4><a href="#">Agencija za nadzor osiguranja</a></h4>
+                        <p>ERP  & Namjenski razvoj</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 portfolio-item filter-erp wow fadeInUp" data-wow-delay="0.2s">
+                <div class="portfolio-wrap">
+                    <figure>
+                        <img src="img/portfolio/ostalo.png" class="img-fluid" alt="">
+                        <a href="img/portfolio/ostalo.png" class="link-preview" data-lightbox="portfolio" data-title="Web 1" title="Preview"><i class="ion ion-eye"></i></a>
+
+                    </figure>
+
+                    <div class="portfolio-info">
+                        <h4><a href="#">Protokol</a></h4>
+                        <p>ERP</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-android filter-web  wow fadeInUp">
+                <div class="portfolio-wrap">
+                    <figure>
+                        <img src="img/portfolio/mss.jpg" class="img-fluid" alt="">
+                        <a href="img/portfolio/mss.jpg" data-lightbox="portfolio" data-title="Mobile Sales System" class="link-preview" title="Preview"><i class="ion ion-eye"></i></a>
+                        <a href="#" class="link-details mobile-sales-link" title="Više detalja"><i class="ion ion-android-open"></i></a>
+                    </figure>
+
+                    <div class="portfolio-info">
+                        <h4><a href="#" class="mobile-sales-link">Mobile Sales System</a></h4>
+                        <p>Android & Web</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 portfolio-item filter-android wow fadeInUp" data-wow-delay="0.1s">
+                <div class="portfolio-wrap">
+                    <figure>
+                        <img src="img/portfolio/wms.jpg" class="img-fluid" alt="">
+                        <a href="img/portfolio/wms.jpg" class="link-preview" data-lightbox="portfolio" data-title="Web 3" title="Preview"><i class="ion ion-eye"></i></a>
+
+                    </figure>
+
+                    <div class="portfolio-info">
+                        <h4><a href="#">eWMS</a></h4>
+                        <p>Android</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 portfolio-item filter-android filter-razvoj filter-web filter-ravoj wow fadeInUp" data-wow-delay="0.2s">
+                <div class="portfolio-wrap">
+                    <figure>
+                        <img src="img/portfolio/app2.jpg" class="img-fluid" alt="">
+                        <a href="img/portfolio/app2.jpg" class="link-preview" data-lightbox="portfolio" data-title="App 2" title="Preview"><i class="ion ion-eye"></i></a>
+
+                    </figure>
+
+                    <div class="portfolio-info">
+                        <h4><a href="#">Multilevel</a></h4>
+                        <p>Android & Web  & Namjenski razvoj</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-web  wow fadeInUp">
+                <div class="portfolio-wrap">
+                    <figure>
+                        <img src="img/portfolio/erad2.jpg" class="img-fluid" alt="">
+                        <a href="img/portfolio/erad2.jpg" data-lightbox="portfolio" data-title="Mobile Sales System" class="link-preview" title="Preview"><i class="ion ion-eye"></i></a>
+                        <a href="#" class="link-details mobile-sales-link" title="Više detalja"><i class="ion ion-android-open"></i></a>
+                    </figure>
+
+                    <div class="portfolio-info">
+                        <h4><a href="#" class="mobile-sales-link">eRAD</a></h4>
+                        <p>Web</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 portfolio-item filter-web  wow fadeInUp" data-wow-delay="0.1s">
+                <div class="portfolio-wrap">
+                    <figure>
+                        <img src="img/portfolio/lcp1.jpg" class="img-fluid" alt="">
+                        <a href="img/portfolio/lcp1.jpg" data-lightbox="portfolio" data-title="Mobile Sales System" class="link-preview" title="Preview"><i class="ion ion-eye"></i></a>
+                        <a href="#" class="link-details mobile-sales-link" title="Više detalja"><i class="ion ion-android-open"></i></a>
+                    </figure>
+
+                    <div class="portfolio-info">
+                        <h4><a href="#" class="mobile-sales-link">LCP</a></h4>
+                        <p>Web</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 portfolio-item filter-ios filter-razvoj wow fadeInUp" data-wow-delay="0.2s">
+                <div class="portfolio-wrap">
+                    <figure>
+                        <img src="img/portfolio/sportsport.jpg" class="img-fluid" alt="">
+                        <a href="img/portfolio/sportsport.jpg" class="link-preview" data-lightbox="portfolio" data-title="Web 3" title="Preview"><i class="ion ion-eye"></i></a>
+
+                    </figure>
+
+                    <div class="portfolio-info">
+                        <h4><a href="#">SportSport.ba</a></h4>
+                        <p>iOS & Namjenski razvoj</p>
+                    </div>
+                </div>
+            </div>
         </div>
 
       </div>
@@ -537,8 +740,14 @@
           <img src="img/clients/perutnina ptuj.png" alt="">
           <img src="img/clients/pivara.png" alt="">
         </div>
-
+          <br>
+          <div class="row">
+              <div class="offset-md-5 col-md-2 offset-4" >
+                  <button id="clientsTableLink" class="btn">Ostali klijenti</button>
+              </div>
+          </div>
       </div>
+
     </section><!-- #clients -->
 
     <!--==========================
@@ -622,9 +831,7 @@
           <h3>TIM</h3>
           <p>Naša marljiva i neumorna ekipa.</p>
         </div>
-
         <div class="row">
-
           <div class="col-sm-3 wow fadeInUp ">
             <div class="member">
               <img src="img/team/has1.png" class="img-fluid first-img members" alt="">
@@ -642,7 +849,6 @@
               <span>Direktor / Projektant informacionih sistema</span>
             </div>
           </div>
-
           <div class="col-sm-3 wow fadeInUp ">
             <div class="member">
               <img src="img/team/ranko1.jpg" class="img-fluid first-img members" alt="">
@@ -660,7 +866,6 @@
               <span>Vodeći projektant informacionih sistema</span>
             </div>
           </div>
-
           <div class="col-sm-3 wow fadeInUp ">
             <div class="member">
               <img src="img/team/edov1.png" class="img-fluid first-img members" alt="">
@@ -678,7 +883,23 @@
               <span>Projektant informacionih sistema</span>
             </div>
           </div>
+          <div class="col-sm-3 wow fadeInUp ">
+            <div class="member">
+              <img src="img/team/deo1.jpg" class="img-fluid first-img members" alt="">
+              <div class="member-info">
+                <div class="member-info-content">
 
+                  <div class="social">
+                    <img src="img/team/deo2.jpg" class="img-fluid" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="text-center">
+              <h4>Dejan Hadžiosmanović</h4>
+              <span>Analitičar sistema</span>
+            </div>
+          </div>
           <div class="col-sm-3 wow fadeInUp ">
             <div class="member">
               <img src="img/team/veca1.jpg" class="img-fluid first-img members" alt="">
@@ -720,13 +941,81 @@
                 <div class="member-info-content">
 
                   <div class="social">
-                    <img src="img/team/kera1.jpg" class="img-fluid" alt="">
+                    <img src="img/team/kera2.jpg" class="img-fluid" alt="">
                   </div>
                 </div>
               </div>
             </div>
             <div class="text-center">
               <h4>Kerim Balić</h4>
+              <span>Softver inženjer</span>
+            </div>
+          </div>
+          <div class="col-sm-3 wow fadeInUp ">
+            <div class="member">
+              <img src="img/team/nihi1.jpg" class="img-fluid first-img members" alt="">
+              <div class="member-info">
+                <div class="member-info-content">
+
+                  <div class="social">
+                    <img src="img/team/nihi2.jpg" class="img-fluid" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="text-center">
+              <h4>Nihad Obradović</h4>
+              <span>Softver inženjer</span>
+            </div>
+          </div>
+          <div class="col-sm-3 wow fadeInUp ">
+            <div class="member">
+              <img src="img/team/koba1.jpg" class="img-fluid first-img members" alt="">
+              <div class="member-info">
+                <div class="member-info-content">
+
+                  <div class="social">
+                    <img src="img/team/koba2.jpg" class="img-fluid" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="text-center">
+              <h4>Kenan Kobić</h4>
+              <span>Softver inženjer</span>
+            </div>
+          </div>
+          <div class="col-sm-3 wow fadeInUp ">
+            <div class="member">
+              <img src="img/team/talijan1.jpg" class="img-fluid first-img members" alt="">
+              <div class="member-info">
+                <div class="member-info-content">
+
+                  <div class="social">
+                    <img src="img/team/talijan2.jpg" class="img-fluid" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="text-center">
+              <h4>Edin Salimović</h4>
+              <span>Softver inženjer</span>
+            </div>
+          </div>
+          <div class="col-sm-3 wow fadeInUp ">
+            <div class="member">
+              <img src="img/team/dzafe1.jpg" class="img-fluid first-img members" alt="">
+              <div class="member-info">
+                <div class="member-info-content">
+
+                  <div class="social">
+                    <img src="img/team/dzafe2.jpg" class="img-fluid" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="text-center">
+              <h4>Haris Džafić</h4>
               <span>Softver inženjer</span>
             </div>
           </div>
@@ -764,7 +1053,7 @@
               <span>Tehničar informacionih sistema i fiskalnih uređaja</span>
             </div>
           </div>
-            <div class="col-sm-3 wow fadeInUp ">
+          <div class="col-sm-3 wow fadeInUp ">
                 <div class="member">
                     <img src="img/team/mahir1.png" class="img-fluid first-img members" alt="">
                     <div class="member-info">
@@ -781,7 +1070,7 @@
                     <span>Tehničar informacionih sistema i fiskalnih uređaja</span>
                 </div>
             </div>
-            <div class="col-sm-3 wow fadeInUp ">
+          <div class="col-sm-3 wow fadeInUp ">
                 <div class="member">
                     <img src="img/team/amar1.png" class="img-fluid first-img members" alt="">
                     <div class="member-info">
@@ -798,7 +1087,7 @@
                     <span>Tehničar informacionih sistema, fiskalnih uređaja i menadžer veleprodaje</span>
                 </div>
             </div>
-            <div class="col-sm-3 wow fadeInUp ">
+          <div class="col-sm-3 wow fadeInUp ">
                 <div class="member">
                     <img src="img/team/elvira1.png" class="img-fluid first-img members" alt="">
                     <div class="member-info">
@@ -815,7 +1104,7 @@
                     <span>Menadžer ureda</span>
                 </div>
             </div>
-            <div class="col-sm-3 wow fadeInUp ">
+          <div class="col-sm-3 wow fadeInUp">
                 <div class="member">
                     <img src="img/team/rade1.png" class="img-fluid first-img members" alt="">
                     <div class="member-info">
@@ -863,6 +1152,7 @@
               <i class="ion-ios-telephone-outline"></i>
               <h3>Administracija</h3>
               <p><a href="tel:+38733557296">+387-33-557-296</a></p>
+                <p>Radno vrijeme: 09:00 - 17:00</p>
             </div>
           </div>
 
@@ -870,14 +1160,14 @@
             <div class="contact-email">
               <i class="ion-ios-email-outline"></i>
               <h3>Email</h3>
-              <p><a href="mailto:info@example.com">info@example.com</a></p>
+              <p><a href="mailto:podrska@eurobit.ba">podrska@eurobit.ba</a></p>
             </div>
           </div>
 
         </div>
 
         <div class="form">
-          <div id="sendmessage">Your message has been sent. Thank you!</div>
+          <div id="sendmessage">Vaša poruka je poslana! Hvala Vam.</div>
           <div id="errormessage"></div>
           <form action="" method="post" role="form" class="contactForm">
             <div class="form-row">
@@ -898,12 +1188,13 @@
               <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Napišite nam nešto..." placeholder="Poruka"></textarea>
               <div class="validation"></div>
             </div>
-            <div class="text-center"><button type="submit">Pošalji</button></div>
+            <div class="text-center"><button type="submit" onclick="window.open('mailto:podrska@eurobit.ba');">Pošalji</button></div>
           </form>
         </div>
 
       </div>
     </section><!-- #contact -->
+
     <section id="map" class="section-bg wow fadeInUp">
       <div class="map">
         <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1614.8468047489666!2d18.39651931999011!3d43.8489901275638!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe57ba4180dca1c7b!2sEurobit+d.o.o.!5e0!3m2!1sen!2sba!4v1470315838104" width="100%" height="100%" frameborder="0" scrolling="0" marginheight="0" marginwidth="0"></iframe>
@@ -932,12 +1223,12 @@
           <div class="col-lg-4 col-md-6 footer-links">
             <h4>Korisni Linkovi</h4>
             <ul>
-              <li><i class="ion-ios-arrow-right"></i> <a href="#intro">Početak</a></li>
-              <li><i class="ion-ios-arrow-right"></i> <a href="#about">O Nama</a></li>
-              <li><i class="ion-ios-arrow-right"></i> <a href="#" id="">Usluge</a></li>
-              <li><i class="ion-ios-arrow-right"></i> <a href="#portfolio">Portfolio</a></li>
-              <li><i class="ion-ios-arrow-right"></i> <a href="#team">Tim</a></li>
-              <li><i class="ion-ios-arrow-right"></i> <a href="#contact">Kontakt</a></li>
+              <li><i class="ion-ios-arrow-right"></i> <a href="#intro" class="scrollto">Početak</a></li>
+              <li><i class="ion-ios-arrow-right"></i> <a href="#about" class="scrollto">O Nama</a></li>
+              <li><i class="ion-ios-arrow-right"></i> <a href="#" >Usluge</a></li>
+              <li><i class="ion-ios-arrow-right"></i> <a href="#portfolio" class="scrollto">Portfolio</a></li>
+              <li><i class="ion-ios-arrow-right"></i> <a href="#team" class="scrollto">Tim</a></li>
+              <li><i class="ion-ios-arrow-right"></i> <a href="#contact" class="scrollto">Kontakt</a></li>
             </ul>
           </div>
 
@@ -1017,7 +1308,1233 @@
           </div>
 
       </div>
-  </section><!-- #services -->
+  </section><!-- #orderForm -->
+
+  <section id="clientsTable" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" id="closebtnClients">&times;</a>
+      <div class="container">
+          <header class="section-header ">
+              <h3>Klijenti</h3>
+              <p>Pogledajte naše zadovoljne klijente</p>
+          </header>
+          <div class="row">
+              <div class="col-md-10">
+                  <div class="row">
+                      <div class="col-md-12">
+                        <p class="pull-left">Acis BH d.o.o. Sarajevo</p>
+                        <p class="pull-right">ERP</p>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-md-12">
+                          <p class="pull-left">ADlink d.o.o. Sarajevo</p>
+                          <p class="pull-right">ERP, Fiskalni uređaji, Održavanje</p>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-md-12">
+                          <p class="pull-left">Adrija produkt d.o.o Zenica</p>
+                          <p class="pull-right">ERP, Održavanje</p>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-md-12">
+                          <p class="pull-left">Aero-Exclusive d.o.o. Sarajevo</p>
+                          <p class="pull-right">ERP, Fiskalni uređaji, Održavanje, Business Intelligence </p>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-md-12">
+                          <p class="pull-left">Agencija za osiguranje depozita BiH</p>
+                          <p class="pull-right">ERP, Osiguranje depozita, Analiza poslovanja, Isplate depozita, Održavanje</p>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-md-12">
+                          <p class="pull-left">Agencija "E-Consulting" d.o.o. Sarajevo</p>
+                          <p class="pull-right">Fiskalni uređaji</p>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-md-12">
+                          <p class="pull-left">Ali d.o.o. Sarajevo</p>
+                          <p class="pull-right">ERP, Fiskalni uređaji, Održavanje</p>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-md-12">
+                          <p class="pull-left">Amko komerc d.o.o. Sarajevo</p>
+                          <p class="pull-right">ERP, Fiskalni uređaji, Održavanje, Business Intelligence </p>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-md-12">
+                          <p class="pull-left">Arizona kompani d.o.o. Istočno Sarajevo</p>
+                          <p class="pull-right">ERP, Održavanje</p>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-md-12">
+                          <p class="pull-left">Babić-trade d.o.o. Sarajevo</p>
+                          <p class="pull-right">ERP</p>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-md-12">
+                          <p class="pull-left">Bajsik d.o.o. Sarajevo</p>
+                          <p class="pull-right">ERP</p>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-md-12">
+                          <p class="pull-left">Balans d.o.o. Breza</p>
+                          <p class="pull-right">ERP, Fiskalni uređaji, Održavanje</p>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-md-12">
+                          <p class="pull-left">Block d.o.o. Sarajevo</p>
+                          <p class="pull-right">ERP, Održavanje</p>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-md-12">
+                          <p class="pull-left">Bogilović d.o.o. Sarajevo</p>
+                          <p class="pull-right">ERP</p>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-md-12">
+                          <p class="pull-left">Centar za unaprijeđivanje osposobljavanja i zapošljavanja osoba sa invaliditetom Sarajevo</p>
+                          <p class="pull-right">ERP</p>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-md-12">
+                          <p class="pull-left">Centar za sport i rekreaciju JU Sarajevo</p>
+                          <p class="pull-right">ERP, Održavanje</p>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-md-12">
+                          <p class="pull-left">Cogo Living d.o.o. Tuzla</p>
+                          <p class="pull-right">ERP</p>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-md-12">
+                          <p class="pull-left">Colorland d.o.o. Sarajevo</p>
+                          <p class="pull-right">ERP</p>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-md-12">
+                          <p class="pull-left">Danish School of Public Administration</p>
+                          <p class="pull-right">Software development</p>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-md-12">
+                          <p class="pull-left">Deny-prom d.o.o. Sarajevo</p>
+                          <p class="pull-right">ERP, Održavanje</p>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-md-12">
+                          <p class="pull-left">DES d.o.o. Sarajevo</p>
+                          <p class="pull-right">ERP</p>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-md-12">
+                          <p class="pull-left">Dobrinja d.d. Sarajevo</p>
+                          <p class="pull-right">ERP, Fiskalni uređaji, Održavanje, Business Intelligence </p>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-md-12">
+                          <p class="pull-left">Domoinvest d.o.o. Sarajevo</p>
+                          <p class="pull-right">ERP, Održavanje</p>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-md-12">
+                          <p class="pull-left">Dragstor 24 d.o.o. Tuzla</p>
+                          <p class="pull-right">ERP</p>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-md-12">
+                          <p class="pull-left">Drm-Derman d.o.o. Sarajevo</p>
+                          <p class="pull-right">ERP, Održavanje</p>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-md-12">
+                          <p class="pull-left">Drvopromet d.o.o. Sarajevo</p>
+                          <p class="pull-right">ERP, IP telefonija, Održavanje</p>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-md-12">
+                          <p class="pull-left">Eco-trend d.o.o. Tuzla</p>
+                          <p class="pull-right">ERP</p>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-md-12">
+                          <p class="pull-left">EDECO Group-inženjering, dizajn i konsulting d.o.o. Sarajevo</p>
+                          <p class="pull-right">ERP, Fiskalni uređaji, Održavanje</p>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-md-12">
+                          <p class="pull-left">Acis BH d.o.o. Sarajevo</p>
+                          <p class="pull-right">ERP</p>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-md-12">
+                          <p class="pull-left">Eding telecom d.o.o. Sarajevo</p>
+                          <p class="pull-right">ERP</p>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-md-12">
+                          <p class="pull-left">Eš company d.o.o. Sarajevo</p>
+                          <p class="pull-right">ERP, Održavanje</p>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-md-12">
+                          <p class="pull-left">Euro best - M d.o.o. Kakanj</p>
+                          <p class="pull-right">ERP</p>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-md-12">
+                          <p class="pull-left">Eurobest d.o.o. Kakanj</p>
+                          <p class="pull-right">ERP</p>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-md-12">
+                          <p class="pull-left">Exclusive d.o.o. Zenica</p>
+                          <p class="pull-right">ERP, Održavanje, Business Intelligence </p>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-md-12">
+                          <p class="pull-left">Ezalm promet d.o.o. Sarajevo</p>
+                          <p class="pull-right">ERP, Održavanje</p>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-md-12">
+                          <p class="pull-left">F1 d.o.o. Sarajevo</p>
+                          <p class="pull-right">ERP</p>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-md-12">
+                          <p class="pull-left">Fabra d.o.o. Sarajevo</p>
+                          <p class="pull-right">ERP</p>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-md-12">
+                          <p class="pull-left">Fabulas d.o.o. Sarajevo</p>
+                          <p class="pull-right">ERP</p>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-md-12">
+                          <p class="pull-left">Fain-inženjering d.o.o. Sarajevo</p>
+                          <p class="pull-right">ERP, Održavanje</p>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-md-12">
+                          <p class="pull-left">Farmasi BH d.o.o. Sarajevo</p>
+                          <p class="pull-right">ERP, Fiskalni uređaji, Održavanje</p>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-md-12">
+                          <p class="pull-left">Farmasi Cosmetics d.o.o. Zagreb</p>
+                          <p class="pull-right">ERP, Održavanje</p>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-md-12">
+                          <p class="pull-left">Farmasi Cosmetics d.o.o. Beograd</p>
+                          <p class="pull-right">ERP, Održavanje</p>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-md-12">
+                          <p class="pull-left">Farmasi Montenegro d.o.o. Podgorica</p>
+                          <p class="pull-right">ERP, Održavanje</p>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-md-12">
+                          <p class="pull-left">Ferbi d.o.o. Sarajevo</p>
+                          <p class="pull-right">ERP, Održavanje</p>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-md-12">
+                          <p class="pull-left">General broker d.o.o. Sarajevo</p>
+                          <p class="pull-right">ERP, Održavanje</p>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-md-12">
+                          <p class="pull-left">General consulting d.o.o. Sarajevo</p>
+                          <p class="pull-right">ERP, Održavanje</p>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-md-12">
+                          <p class="pull-left">General servis d.o.o. Sarajevo</p>
+                          <p class="pull-right">ERP, Održavanje</p>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-md-12">
+                          <p class="pull-left">GMC-inženjering d.o.o. Sarajevo</p>
+                          <p class="pull-right">ERP, Održavanje</p>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-md-12">
+                          <p class="pull-left">Gorenje Commerce d.o.o. Sarajevo</p>
+                          <p class="pull-right">ERP, IP telefonija, Call centar, Održavanje</p>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-md-12">
+                          <p class="pull-left">Građevinski fakultet Sarajevo</p>
+                          <p class="pull-right">ERP, Održavanje</p>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-md-12">
+                          <p class="pull-left">Ha & Ir t.r Sarajevo</p>
+                          <p class="pull-right">ERP, Fiskalni uređaji, Održavanje</p>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-md-12">
+                          <p class="pull-left">Haval d.o.o. Sarajevo</p>
+                          <p class="pull-right">ERP, Održavanje</p>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-md-12">
+                          <p class="pull-left">Hoše Komerc d.o.o. Sarajevo</p>
+                          <p class="pull-right">ERP, Održavanje</p>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-md-12">
+                          <p class="pull-left">Indok sistemi d.o.o. Sarajevo</p>
+                          <p class="pull-right">ERP, Održavanje</p>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-md-12">
+                          <p class="pull-left">Institut za materijale i konstrukcije Građevinskog fakulteta Sarajevo</p>
+                          <p class="pull-right">Održavanje</p>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-md-12">
+                          <p class="pull-left">Institut za hidrotehniku Sarajevo</p>
+                          <p class="pull-right">ERP</p>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-md-12">
+                          <p class="pull-left">Interauto d.o.o. Sarajevo</p>
+                          <p class="pull-right">ERP, Održavanje</p>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-md-12">
+                          <p class="pull-left">Interagent d.o.o. Mostar</p>
+                          <p class="pull-right">ERP, Održavanje</p>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-md-12">
+                          <p class="pull-left">Interšped d.d. Sarajevo</p>
+                          <p class="pull-right">ERP, Fiskalni uređaji, Održavanje</p>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-md-12">
+                          <p class="pull-left">Interšped Logistics d.o.o. Sarajevo</p>
+                          <p class="pull-right">ERP, Fiskalni uređaji, Održavanje</p>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-md-12">
+                          <p class="pull-left">Istrabenz plini d.o.o. Breza</p>
+                          <p class="pull-right">ERP, Fiskalni uređaji</p>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-md-12">
+                          <p class="pull-left">Java Language Zone d.o.o. Zagreb</p>
+                          <p class="pull-right">Software development</p>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-md-12">
+                          <p class="pull-left">Kobra d.o.o. Sarajevo</p>
+                          <p class="pull-right">ERP, Održavanje</p>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-md-12">
+                          <p class="pull-left">Kokan promex d.o.o. Sarajevo</p>
+                          <p class="pull-right">ERP, Održavanje</p>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-md-12">
+                          <p class="pull-left">Kondisa d.o.o. Ilijaš</p>
+                          <p class="pull-right">ERP, Održavanje</p>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-md-12">
+                          <p class="pull-left">KP Komunalno Kreševo</p>
+                          <p class="pull-right">ERP, Obračun komunalnih usluga</p>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-md-12">
+                          <p class="pull-left">KP Komunalno Kreševo</p>
+                          <p class="pull-right">ERP, Fiskalni uređaji, Održavanje</p>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-md-12">
+                          <p class="pull-left">Krajs BH d.o.o. Sarajevo</p>
+                          <p class="pull-right">ERP, Fiskalni uređaji, Održavanje</p>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-md-12">
+                          <p class="pull-left">Kreis BH d.o.o. Sarajevo</p>
+                          <p class="pull-right">ERP, Fiskalni uređaji, Održavanje</p>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-md-12">
+                          <p class="pull-left">Kupitehniku d.o.o. Sarajevo</p>
+                          <p class="pull-right">ERP, Održavanje</p>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-md-12">
+                          <p class="pull-left">Lake d.o.o. Sarajevo</p>
+                          <p class="pull-right">ERP</p>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-md-12">
+                          <p class="pull-left">Marković Impact d.o.o. Kiseljak</p>
+                          <p class="pull-right">ERP, Održavanje</p>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-md-12">
+                          <p class="pull-left">Metalika t.r. Sarajevo</p>
+                          <p class="pull-right">ERP</p>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-md-12">
+                          <p class="pull-left">Neotim d.o.o. Sarajevo</p>
+                          <p class="pull-right">ERP, Održavanje</p>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-md-12">
+                          <p class="pull-left">Penny plus d.o.o. Sarajevo</p>
+                          <p class="pull-right">B2B</p>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-md-12">
+                          <p class="pull-left">Perutnina Ptuj d.o.o. Laktaši</p>
+                          <p class="pull-right">ERP, Održavanje</p>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-md-12">
+                          <p class="pull-left">Perutnina Ptuj-BH d.o.o. Breza</p>
+                          <p class="pull-right">ERP, Održavanje</p>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-md-12">
+                          <p class="pull-left">Pinjo-Linea d.o.o. Sarajevo</p>
+                          <p class="pull-right">ERP, Održavanje</p>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-md-12">
+                          <p class="pull-left">Poljooprema d.d. Sarajevo</p>
+                          <p class="pull-right">ERP, Održavanje</p>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-md-12">
+                          <p class="pull-left">Prirodno-matematički fakultet Sarajevo</p>
+                          <p class="pull-right">ERP, Održavanje</p>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-md-12">
+                          <p class="pull-left">Prospect C&S</p>
+                          <p class="pull-right">Software development</p>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-md-12">
+                          <p class="pull-left">Rohe strojarske instalacije d.o.o. Sarajevo</p>
+                          <p class="pull-right">ERP</p>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-md-12">
+                          <p class="pull-left">Rondić trgopek d.o.o. Sarajevo</p>
+                          <p class="pull-right">ERP, Održavanje</p>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-md-12">
+                          <p class="pull-left">Saben (Beneton) d.o.o. Sarajevo</p>
+                          <p class="pull-right">ERP, Održavanje</p>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-md-12">
+                          <p class="pull-left">Safege Belgium</p>
+                          <p class="pull-right">Software development</p>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-md-12">
+                          <p class="pull-left">Sarajevotekstil d.d. Sarajevo</p>
+                          <p class="pull-right">ERP </p>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-md-12">
+                          <p class="pull-left">Sarajevska pivara d.d. Sarajevo</p>
+                          <p class="pull-right">POS</p>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-md-12">
+                          <p class="pull-left">Seb development d.o.o. Sarajevo</p>
+                          <p class="pull-right">Održavanje</p>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-md-12">
+                          <p class="pull-left">Sefo d.o.o. Sarajevo</p>
+                          <p class="pull-right">ERP, Održavanje</p>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-md-12">
+                          <p class="pull-left">Semerkand d.o.o. Sarajevo</p>
+                          <p class="pull-right">ERP, Održavanje</p>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-md-12">
+                          <p class="pull-left">Simco d.o.o. Sarajevo</p>
+                          <p class="pull-right">ERP</p>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-md-12">
+                          <p class="pull-left">Sofić s.o.z.r Sarajevo</p>
+                          <p class="pull-right">ERP, Fiskalni uređaji</p>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-md-12">
+                          <p class="pull-left">Sportsport d.o.o. Sarajevo</p>
+                          <p class="pull-right">Mobilne aplikacije</p>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-md-12">
+                          <p class="pull-left">Svjetlost-štampa d.o.o. Sarajevo</p>
+                          <p class="pull-right">ERP, Održavanje</p>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-md-12">
+                          <p class="pull-left">Svjetlost-BH print d.o.o. Sarajevo</p>
+                          <p class="pull-right">ERP</p>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-md-12">
+                          <p class="pull-left">Swislion-Takovo d.o.o. Sarajevo</p>
+                          <p class="pull-right">ERP, Fiskalni uređaji, Održavanje</p>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-md-12">
+                          <p class="pull-left">Šćona d.o.o. JKP Fojnica</p>
+                          <p class="pull-right">ERP, Obračun komunalnih usluga</p>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-md-12">
+                          <p class="pull-left">Tapcraft d.o.o. Sarajevo</p>
+                          <p class="pull-right">ERP, Fiskalni uređaji, Održavanje</p>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-md-12">
+                          <p class="pull-left">TD Marketi d.d. Sarajevo</p>
+                          <p class="pull-right">ERP, Fiskalni uređaji, Održavanje, Business Intelligence </p>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-md-12">
+                          <p class="pull-left">Teamm d.o.o. Trnovo</p>
+                          <p class="pull-right">ERP, Fiskalni uređaji, Održavanje</p>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-md-12">
+                          <p class="pull-left">Tiron d.o.o. Kakanj</p>
+                          <p class="pull-right">ERP, Fiskalni uređaji, Održavanje</p>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-md-12">
+                          <p class="pull-left">Top color d.o.o. Sarajevo</p>
+                          <p class="pull-right">ERP, Održavanje</p>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-md-12">
+                          <p class="pull-left">Tranzitexport d.o.o. Sarajevo</p>
+                          <p class="pull-right">IP telefonija, Održavanje</p>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-md-12">
+                          <p class="pull-left">USAID</p>
+                          <p class="pull-right">Software Development</p>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-md-12">
+                          <p class="pull-left">Voće promet export-import d.o.o. Jablanica</p>
+                          <p class="pull-right">ERP, Održavanje</p>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-md-12">
+                          <p class="pull-left">Visoko JKP Visoko</p>
+                          <p class="pull-right">ERP, Obračun komunalnih usluga</p>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-md-12">
+                          <p class="pull-left">Vodokom JP Kakanj</p>
+                          <p class="pull-right">ERP, Obračun komunalnih usluga</p>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-md-12">
+                          <p class="pull-left">Vodovod JP Bistrica, Bijelo Polje, Crna Gora</p>
+                          <p class="pull-right">ERP, Obračun komunalnih usluga</p>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-md-12">
+                          <p class="pull-left">Vodovod i kanalizacija JP, Danilovgrad, Crna Gora</p>
+                          <p class="pull-right">ERP, Obračun komunalnih usluga</p>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-md-12">
+                          <p class="pull-left">Vodovod Pljevlja JP, Pljevlja, Crna Gora</p>
+                          <p class="pull-right">ERP, Obračun komunalnih usluga</p>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-md-12">
+                          <p class="pull-left">Vodovod i kanalizacija AD Istočno Sarajevo</p>
+                          <p class="pull-right">ERP, Obračun komunalnih usluga</p>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-md-12">
+                          <p class="pull-left">Witteveen & Bos</p>
+                          <p class="pull-right">Software Development</p>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-md-12">
+                          <p class="pull-left">Zlatar Sofić d.o.o. Sarajevo</p>
+                          <p class="pull-right">ERP, Fiskalni uređaji, Održavanje</p>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-md-12">
+                          <p class="pull-left">Zvijezda d.o.o. Sarajevo</p>
+                          <p class="pull-right">ERP, Održavanje</p>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-md-12">
+                          <p class="pull-left">Queens-M d.o.o. Mostar</p>
+                          <p class="pull-right">Fiskalni uređaji</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+      </div>
+  </section><!-- #orderForm -->
+
+  <section id="erp" class="overlay">
+    <a href="javascript:void(0)" class="closebtn" id="closebtnErp">&times;</a>
+    <div class="container">
+      <header class="section-header ">
+        <h3>ERP</h3>
+        <p>Enterprise resource planning</p>
+      </header>
+      <div class="row">
+        <div class="col-md-8 offset-md-3 text-center">
+            <img class="img-responsive" src="img/erp1.png" alt="">
+            <p>Eurobit ERP je integralni poslovni informacioni sistem nastao kao sinteza savremenih
+              tehnologija i dugogodišnjeg rada i iskustva stručnjaka naše kompanije na polju razvoja
+              poslovnih informacionih sistema i organizacije poslovanja.</p>
+
+            <p>Danas je nemoguće zamisliti kompaniju čije poslovanje nije podržano nekim oblikom
+              informacionih tehnologija. Od vođenja skladišta, obračuna plata, praćenja finansija ili
+              prodaje u lancu maloprodajnih objekata. Međutim, u praksi se često susreću takva rješenja
+              koja pokrivaju samo određene poslovne procese. To su najčešće pojedinačni softverski
+              programi koji djelomično ili u potpunosti podržavaju jednu poslovnu funkciju, ali nemaju ili
+              imaju ograničenu ulogu u ostalim poslovnim procesima u jednoj kompaniji. U takvim
+              situacijama nije rijetkost da knjigovodstvo ima jednu informaciju, prodaja drugu a
+              menadžment sasvim treću.</p>
+
+            <p>EuroBiT ERP je zato izgrađen da bude integralan i jedinstven sistem praćenja svih poslovnih
+              promjena u jednoj kompaniji. Bez obzira na veličinu kompanije (od jednog skladišta ili
+              maloprodajnog objekta do multinacionalne kompanije sa fizički distribuiranim poslovanjem)
+              EuroBiT poslovni informacioni sistem je svojom organizacijom i načinom realizacije podoban
+              za sveobuhvatno i integralno praćenje svih poslovnih funkcija i procesa.</p>
+
+            <img class="img-responsive" src="img/erp2.png" alt="">
+
+            <p>Sa tehničke strane EuroBiT ERP je organizovan u posebne softverske aplikacije (aplikativne
+              module) koje pokrivaju specifične poslovne procese, ali bazirane na jedinstvenoj bazi
+              podataka sa izraženom podatkovnom i funkcionalnom povezanošću. Na taj način je omogućeno
+              našim korisnicima da kombinuju dijelove integralnog softverskog paketa prema svojim
+              poslovnim potrebama ali da zadrže jedinstvenost i integralnost cijelog sistema.</p>
+            <p>Sa funkcionalne strane Eurobit poslovni informacioni sistem pokriva poslovne funkcije:</p>
+            <p>
+            <ul>
+              <li> Nabave</li>
+              <li> Skladištenja</li>
+              <li> Proizvodnje</li>
+              <li> Prodaje</li>
+              <li> Marketinga</li>
+              <li> Upravaljanja ljudskim resursima</li>
+              <li> Upravljanja sredstvima</li>
+              <li> Finansija</li>
+              <li> Planiranja</li>
+              <li> Analize</li>
+            </ul>
+            <p>Softverske aplikacije koje čine EuroBiT poslovni informacioni sistem su prema svojoj
+              specifičnoj ulozi organizovane kao:</p>
+            <p>
+            <ul>
+              <li> Robno knjigovodstvo veleprodaje koje pokriva sve poslovne procese upravljanja
+                veleprodajom i skladištima roba i proizvoda
+              </li>
+              <li> Robno knjigovodstvo maloprodaje koje pokriva sve poslovne procese upravljanja
+                maloprodajom i zalihama maloprodajnih objekata
+              </li>
+              <li> Robno knjigovodstvo ugostiteljstva koje pokriva sve poslovne procese upravljanja
+                ugostiteljstvom i zalihama ugostiteljskih objekata
+              </li>
+              <li> 'Point Of Sale' sistemi za maloprodajne i ugostiteljske objekte koje pokriva sve
+                poslovne procese direktne prodaje u maloprodajnim i ugostiteljskim objektima
+              </li>
+              <li> Materijalno knjigovodstvo koje pokriva sve poslovne procese upravljanja zalihama
+                sirovina, materijala i poluproizvoda
+              </li>
+              <li> Fakturisanje koje pokriva poslovne procese fakturisanja usluga te zbirno fakturisanje
+                roba i proizvoda
+              </li>
+              <li> Nabavka koja pokriva sve poslovne procese internog i eksternog naručivanja roba</li>
+              <li> Podrška prodaji i distribuciji roba i usluga koje pokriva sve poslovne procese podrške
+                procesima prodaje od prikupljanja narudžbi do planiranja distribucije
+              </li>
+              <li> Praćenje proizvodnje koje pokriva sve poslovne procese planiranja, pripreme,
+                lansiranja, obračuna i praćenja proizvodnje
+              </li>
+              <li> Obračun plata i upravljanje ljudskim resursima koje pokriva poslovne procese evidencije
+                i upravljanja ljudskim resurima i obračunima zarada
+              </li>
+              <li> Stalna sredstva koje pokriva sve poslovne procese upravljanja stalnim sredstvima</li>
+              <li> Finansijska operativa koje pokriva sve poslovne procese praćenje obaveza i potraživanja
+                i izvora novčanih sredstava
+              </li>
+              <li> Finansijsko knjigovodstvo koje pokriva sve poslovne procese upravljanja finansijskim
+                poslovanjem
+              </li>
+              <li> Planiranje koje pokriva poslovne procese planiranja prodaje roba i usluga kao i
+                finansijskog poslovanja
+              </li>
+              <li> Analiza poslovanja koje pokriva poslovne procese praćenja i analize realizacije
+                poslovnih procesa
+              </li>
+            </ul>
+
+            <p>Uvođenje EuroBiT poslovnog informacionog sistema u poslovanje našim korisnicima
+              obezbjeđuje:</p>
+
+            <p>
+            <ul>
+              <li> efikasnost u obavljanju ključnih poslovnih procesa</li>
+              <li> povezanost svih dijelove kompanije i svih poslovnih procesa u jedinstvenu cjelinu</li>
+              <li> egzaktno praćenje i pregled podataka u realnom vremenu</li>
+              <li> pouzdanost pohranjenih podataka i dobivenih informacija</li>
+              <li> mogućnost pravovremenog donošenja poslovnih odluka</li>
+              <li> osavremenjivanje i unaprijeđenje poslovnih procesa</li>
+            </ul>
+
+            <p>Integralnost EuroBiT poslovnog informacionog sistema upotpunjena je i funkcionalnom i
+              podatkovnom povezanosti sa specifičnim uređajima (elektronskim vagama, daljinskim
+              skenerima,...) kao i drugim našim informacionim sistemima za MMS (Mobile Sale System), LCP
+              (Loyalty Card Program), WMS (Warehouse Management System).</p>
+        </div>
+      </div>
+
+    </div>
+  </section><!-- #erpForm -->
+
+  <section id="bussines" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" id="closebtnBussines">&times;</a>
+      <div class="container">
+          <header class="section-header ">
+              <h3>Business intelligence</h3>
+              <p>Ukoliko su informacije pogrešne, pogrešne su i odluke.</p>
+          </header>
+          <div class="row">
+              <div class="col-md-8 offset-md-2 text-center">
+
+                      <p>Iza svake odluke menadžera ili finansijskog analitičara stoje informacije koje se temelje na
+                          dobro ili loše organizovanim podacima. Ukoliko su informacije pogrešne, pogrešne su i
+                          odluke. Ukoliko su informacije kvalitetne, ali “nedostupne” u stvarnom vremenu, tada odluke
+                          mogu biti dobre, ali često postaju nepravovremene. Rješenje spomenutih izazova jest uvođenje
+                          u primjenu u poslovnom odlučivanju naprednih BI (eng. Business Intelligence – poslovna
+                          inteligencija) i DV (eng. Data Visualization – podatkovna vizualizacija) tehnologija za
+                          podršku odlučivanju. Ove dvije tehnologije bi se jednim imenom mogle nazvati VI (eng. Visual
+                          Intelligence) – Vizualna inteligencija.</p>
+
+                      <img class="img-responsive img-centered" src="img/bi0.png" alt="">
+
+                      <p>Moderne BI aplikacije objedinjuju obje prethodne tehnologije pružajući korisniku mogućnost da
+                          izvrši:</p>
+                      <p>
+                      <ul>
+                          <li>vizuelnu i prediktivnu dubinsku analizu informacija</li>
+                          <li>brzo pretraživanje u velikim bazama podataka</li>
+                          <li>jednostavnu uzročno povezanu i poslovnom logikom orijentisanu interaktivnu analizu
+                              podataka
+                          </li>
+                      </ul>
+
+                      <p><b>Na čemu se zasniva dobar BI sistem?</b></p>
+                      <p>Svaki BI sistem se zasniva na dobro organizovanim i lako pristupačnim i prezentabilnim
+                          informacijama. U osnovi BI sistem čine BI razvojno okruženje i sama implementacija
+                          konkretnih BI aplikacija.</p>
+                      <p></p>
+                      <p>Mi smo se odlučili za jedan od najmodernijih i najfleksibilnijih razvojnih alata u oblasti BI
+                          sistema, proizvode kompanije QlikTech pod nazivom QlikView Business Discovery Platform.</p>
+                      <p></p>
+                      <p>QlikView je najfleksibilnija Business Intelligence platforma za pretvaranje podataka u
+                          znanje. Više od 26.000 organizacija širom svijeta je omogućilo svojim korisnicima da lako
+                          konsoliduju, pretraže i vizualno analiziraju svoje poslovne podatke koristeći QlikView
+                          jednostavnost i fleksibilnost.</p>
+
+                      <img class="img-responsive img-centered" src="img/bi1.jpg" alt="">
+
+                      <p>QlikView promovira neograničenu analizu aplikativnih podataka, pomaže korisnicima u uštedi
+                          vremena i donošenju preciznih odluka koristeći:</p>
+                      <p>
+                      <ul>
+                          <li>Konsolidaciju relevantnih podataka iz različitih izvora u jedinstvenu aplikaciju</li>
+                          <li>Istraživanje asocijativnosti u podacima</li>
+                          <li>Donošenje zajedničkih odluka kroz sigurnu kolaboraciju u realnom vremenu</li>
+                          <li>Vizualizaciju podataka koristeći state-of-the-art grafičku prezentaciju</li>
+                          <li>Pretraživanje kroz cijeli skup podataka direktno i indirektno</li>
+                          <li>Direktnu interakciju sa podacima, komandnim pločama i analizama</li>
+                      </ul>
+
+                      <p></p>
+                      <p><b>Šta možemo ponuditi?</b></p>
+                      <p></p>
+                      <p>BI u današnjem svijetu postaju neizostavni “alat” u različitim poslovnim oblastima kao što su
+                          finansije, trgovina, telekomunikacije, marketing, logistika…</p>
+                      <p>Naša kompanija uspješno izvodi usluge implementacije i konsaltinga u oblasti poslovne
+                          inteligencije. Možemo vam ponuditi:</p>
+                      <p>
+                      <ul>
+                          <li>Projektovanje i razvoj skladišta podatka (eng. Data Warehouse – DWH) kao temelj
+                              poslovnog odlučivanja i izvještajnog sistema uopšte
+                          </li>
+                          <li>Implementaciju cjelokupnog BI sistema, uključujući alate za BI analize, specifičine BI
+                              aplikacije u oblasti vašeg poslovanja, korporativne informacione i BI portale…
+                          </li>
+                          <li>Razvoj korporativne strategije poslovnog odlučivanja i vizualizacije podataka</li>
+                      </ul>
+
+                      <img class="img-responsive img-centered" src="img/bi2.png" alt="">
+
+              </div>
+          </div>
+
+      </div>
+  </section><!-- #bussines -->
+
+  <section id="web" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" id="closebtnWeb">&times;</a>
+      <div class="container">
+          <header class="section-header ">
+              <h3>Web</h3>
+              <p>Kvalitet nas opisuje</p>
+          </header>
+          <div class="row">
+              <div class="col-md-8 offset-md-2 text-center">
+                      <!-- Project Details Go Here -->
+                      <h2>Web</h2>
+                      <!--<p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>-->
+                      <img class="img-responsive img-centered" src="img/web1.jpg" alt="">
+
+                      <p>Povećana upotreba interneta u kompanijama i među pojedincima utjecala je i na načine na koje
+                          se organiziraju i upravljaju poslovi. To je dovelo do velike rasprostranjenosti web
+                          aplikacija, koje, iz dana u dan, sve više zamjenjuju klasične, desktop aplikacije.</p>
+
+                      <p>Osnovni razlog zbog kojeg su web aplikacije postale svojevrstan standard jesu njihove brojne
+                          prednosti:</p>
+                      <ul>
+                          <li> može im se pristupiti veoma jednostavno, gdje god se nalazili, a jedini preduslov je
+                              internet konekcija
+                          </li>
+                          <li> ne zavise od platformi ili operativnih sistema, za njihovo korištenje potreban je samo
+                              web pretraživač
+                          </li>
+                          <li> svi korisnici pristupaju istoj verziji aplikacije, tako da ne postoje problemi s
+                              kompatibilnošću
+                          </li>
+                          <li> ne zauzimaju prostor na disku i općenito su jako zahvalne kada su u pitanju računarski
+                              resursi
+                          </li>
+                          <li> uspješno rješavaju problem piraterije i ilegalnog korištenja</li>
+                          <li> troškovi održavanja su svedeni na minimum, a sam proces održavanja krajnjeg korisnika
+                              uključuje malo ili nimalo
+                          </li>
+                      </ul>
+
+                      <p>Spremni da odgovorimo na zahtjeve naših klijenata, veliku pažnju posvećujemo i razvoju web
+                          aplikacija. Prateći najnovije tehnologije i na serverskoj i na klijentskoj strani (Java
+                          Spring, Microsoft .NET, PHP, Angular JS, Angular 2, itd.), kreiramo cjelokupna poslovna
+                          rješenja.</p>
+
+
+              </div>
+          </div>
+
+      </div>
+  </section><!-- #web -->
+
+  <section id="mobileModal" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" id="closebtnMobile">&times;</a>
+      <div class="container">
+          <header class="section-header ">
+              <h3>Mobile</h3>
+              <p>Kvalitet nas opisuje</p>
+          </header>
+          <div class="row">
+              <div class="col-md-8 offset-md-2 text-center">
+                      <p>Kreiramo i razvijamo mobilne aplikacije od pisanja prve linije koda do procesa objave prve
+                          verzije na store-u. U sklopu toga nudimo integraciju na postojeću web ili desktop aplikaciju
+                          s ciljem poboljšanja biznis procesa naših klijenata. U današnjem IT sektoru, mobilne
+                          tehnologije doživljavaju ekspanziju u smjeru razvoja gotovo svih sistema i aplikacija koje
+                          se nalaze na internetu. Većina web orijentisanih sistema ima također razvijenu i skraćenu
+                          ili potpunu mobilnu verziju kojom se korisnicima nudi mogućnost bržeg upravljanja podacima,
+                          većeg fokusa na aplikaciju, spašavanjem određenih podataka, rad u offline režimu,
+                          prikladniji dizajn...
+                      </p>
+
+                      <img class="img-responsive img-centered" src="img/mobile1.jpg" alt="">
+
+                      <p>Također, mobilna aplikacija ne mora biti usko vezana za sistem koji je implementiran na
+                          internetu već može biti dio postoježeg lokalnog ERP sistema, pri čemu služi da poboljša
+                          određeni segment nekog biznis procesa.</p>
+
+                      <p>Razvoj aplikacija radimo za dvije platforme: Android i iOS, uz mogućnost izbora izrade
+                          softverskog rješenja(native ili cross-platform). Izborom native izrade, svaka od aplikacija
+                          se razvija zasebno u različitim radnim okruženjima sa mnogo opcija i primjenjujući različite
+                          standarde(dizajnerske i arhitekturalne) za svaku platformu. Cross-platform omogućava razvoj
+                          jedne aplikacije koja je ista za sve platforme(dizajnom, arhitekturom, standardima), te
+                          omogućava brži razvoj i implementaciju softverskog rješenja, te pokretanje i objavljivanje
+                          aplikacije na App i Play storeu. U sklopu razvoja nudimo razne specifičnosti unutar
+                          aplikacija:</p>
+
+                      <ul>
+                          <li> rad u offline režimu</li>
+                          <li> interna/lokalna baza podataka na aplikaciji</li>
+                          <li> OAuth ili neka druga vrsta autentikacije sa postojećim web servisom</li>
+                          <li> izrada na osnovu postojeće aplikacije na drugoj platformi</li>
+                          <li> savjetovanje/consulting vezano za aktuelna/popularna rješenja te poboljšanja ideje</li>
+                      </ul>
+
+                      <img class="img-responsive img-centered" src="img/mobile2.jpg" alt="">
+
+                      <p>Osim razvoja mobilnih aplikacija nudimo održavanje i razvoj poboljšanja funkcionalnosti istih
+                          s ciljem da našim klijentima obezbijedimo punu podršku te prenos njihovih ideja i načina
+                          poslovanja na softversko rješenje.</p>
+              </div>
+          </div>
+
+      </div>
+  </section><!-- #mobile -->
+
+  <section id="erad" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" id="closebtnErad">&times;</a>
+      <div class="container">
+          <header class="section-header ">
+              <h3>Evidencija Radnog Vremena</h3>
+          </header>
+          <div class="row">
+              <div class="col-md-8 offset-md-2 text-center">
+
+                      <img class="img-responsive img-centered" src="img/erad1.png" alt="">
+                      <p> eRad je poslovni informacioni sistem namjenjen poslovnim organizacijama za evidenciju i
+                          kontrolu radnog vremena svojih uposlenika. Sistem pruža više prava pristupa u zavisnosti od
+                          uloge korisnika u samom sistemu.
+                          Korisnik kroz sistem može:
+                      </p>
+                      <ul>
+                          <li> definisati strukturu firme</li>
+                          <li> dodati radnike i pridružiti ih odgovarajućim organizacionim jedinicama</li>
+                          <li> definisati smjene poslovne jedinice</li>
+                          <li> definisanje template-a kalendara na nivou organizacije</li>
+                      </ul>
+                      <p>
+                          Sistem podržava evidenciju vremena po tipu odsustva i također jednostavno i brzo filtriranje
+                          po radnicima za određeni tip vremenskog odustva.
+                          Nakon evidencije radnog vremena korisnik ima mogućnost kreiranja PDF izvještaja pojedinačno
+                          za radnika (osnovni i detaljniji pregled) u definisanom vremenskom periodu, a također i
+                          mogućnost kreiranja izvještaja po organizacionim jedinicama za određeni vremenski period
+                      </p>
+
+                      <img class="img-responsive img-centered" src="img/erad2.jpg" alt="">
+
+              </div>
+          </div>
+
+      </div>
+  </section><!-- #erad -->
+
+  <section id="sportsport" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" id="closebtnSport">&times;</a>
+      <div class="container">
+          <header class="section-header ">
+              <h3>SportSport</h3>
+          </header>
+          <div class="row">
+              <div class="col-md-8 offset-md-2 text-center">
+
+                  <p>U okviru projekta za SportSport.ba napravljena je native-mobile aplikacija za iOS, koja
+                      koristi servise istoimenog najčitanijeg web portala za sportske novosti u BiH. Aplikacija
+                      omogućava pregled novosti iz raznih kategorija i sportova, tabela, rezultata, live prenosa
+                      mečeva i sl. Obje mobilne aplikacije(Android & iOS) su osmišljene/projektovane tako da imaju
+                      dinamičko ponašanje po pitanju reklama, kategorija novosti, push notifikacija, video formata
+                      unutar novosti i sl. što nudi potpunu kontrolu kroz admin-interfejs na web portalu.</p>
+                  <img class="img-responsive img-centered" src="img/sportsport1.png" alt="">
+                  <p>Aplikacija radi u 2 režima: online i offline sa keširanim podacima. Reklame unutar aplikacije
+                      se mogu pojavljivati na više mjesta, i mogu biti različitog tipa. Kategorije novosti koje se
+                      mogu pojaviti u aplikaciji kao i tagove određuje API koji servira podatke. Push notifikacije
+                      su uvezane sa ostatkom sistema i objavom najudarnijih vijesti iz svijeta sporta. Vijesti kao
+                      strukture mogu sadrzavati više vrsta multimedijalnog sadržaja i kao takve krajnjim
+                      korisnicima daju potpunu informaciju o događaju. Na taj način korisnici su uvijek up-to-date
+                      sa najnovijim informacijama kroz svoje najdraže uređaje.</p>
+
+              </div>
+          </div>
+
+      </div>
+  </section><!-- #sportsport -->
+
+  <section id="loyalty" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" id="closebtnLoyalty">&times;</a>
+      <div class="container">
+          <header class="section-header ">
+              <h3>Loyalty Card Program</h3>
+              <p>Šta je program lojalnosti?</p>
+          </header>
+          <div class="row">
+              <div class="col-md-8 offset-md-2 text-center">
+
+                  <p>Program lojalnosti je marketinška strategija osmišljena da ohrabri kupce da i dalje kupuju
+                      vaše proizvode ili koristiti usluge vašeg poslovanja. U praksi postoji veliki broj
+                      realizacija programa lojalnosti koji korisnicima nude različite mogućnosti i nagradne šeme.
+                      U maloprodajnom biznisu su posebno zastupljene kartice lojalnosti u obliku plastičnih
+                      kartica vizuelno sličnih kreditnim karticama koje služe za identifikaciju nosica kartice kao
+                      člana u programu lojalnosti. Kartice lojalnosti obično imaju na sebi jedinstveni
+                      identifikator korisnika kartice kao što su EAN code, magnetna traka ili RFID čip koji se
+                      jednostavno mogu očitavati na prodajnim mjestima.
+                      Korištenjem kartice lojalnosti, kupci obično mogu dobiti pravo na popust na trenutnu
+                      kupovinu, ili na dodjelu bodova koji se mogu koristiti za buduće kupovine. Kartice
+                      lojalnosti se mogu smatrati i jednim oblikom virtualne valute jer se nagradni bodovi mogu
+                      razmjeniti za dobra ili usluge, a u nekim slučajevima i natrag u gotovinu.</p>
+                  <p>EUROBIT PROGRAM LOJALNOSTI</p>
+                  <img class="img-responsive img-centered" src="img/lcp1.jpg" alt="">
+
+                  <p>Uvažavajući sve veću potrebu naših korisnika da se približe svojim kupcima, da im ponude
+                      različite vidove marketinških akcija, naša kompanija je razvila vlastitu
+                      softversko-tehnološku platformu programa lojalnosti kao podršku takvim nastojanjima naših
+                      korisnika.
+                      Eurobit program lojalnosti je softversko marketinška platforma, razvijena kao skup
+                      softverskih aplikacija, međusobno potpuno integrisanih, ali i otvorenih za integraciju u
+                      postojeće informacione platforme i aplikacije poslovnog informacionog sistema naših
+                      korisnika. Namjena EuroBiT programa lojalnosti je pružanje tehničke podrške našim
+                      korisnicima da realizuju vlastite oblike programa lojalnosti prema svojim kupcima uz punu
+                      kontrolu kreiranja, upravljanja, i praćenja realizacije programa lojalnosti.</p>
+
+                  <p>Mogućnost integrisanja EuroBiT programa lojalnosti u ostale segmente postojećih informacionih
+                      sistema naših korisnika obezbjeđuje uvođenje i eksploataciju programa lojalnosti bez
+                      dodatnih investicija za opremu i infrastrukturu i bez promjena u postojećem načinu
+                      funkcionisanja poslovnog informacionog sistema.</p>
+
+                  <p>SOFTVERSKE KOMPONENTE EUROBIT PROGRAMA LOJALNOSTI</p>
+                  <p>Softversko marketinška platforma EuroBiT programa lojalnosti koju smo realizovali za vas
+                      sastoji se od tri segmenta:</p>
+
+                  <ul>
+                      <li> administratorskog portala namjenjenog vama kao nosiocima programa lojalnosti za
+                          kreiranje, upravljanje i praćenje realizacije vlastitog programa lojalnosti
+                      </li>
+                  </ul>
+                  <p>Administratorski portal je razvijen kao web aplikacija realizovana po standardima maksimalne
+                      zaštite i sigurnosti vaših podataka. Administratorski portal može biti cloud bazirano
+                      rješenje ili instaliran na vašoj opremi ako posjedujete potrebne tehničke resurse. Kroz ovu
+                      aplikaciju možete da kreirate vlastite programe lojalnosti, definišete bonitetne skale i
+                      uslove, pohranjujete podatke o vašim korisnicima, pratite i upravljate transakcijama,
+                      kreirate statističke i analitičke preglede, itd.</p>
+                  <ul>
+                      <li> servisnog nivoa namjenjenog integrisanju u postojeće POS sisteme i druge aplikativne
+                          komponente vašeg postojećeg poslovnog sistema sa ciljem efikasnog i sigurnog
+                          registrovanja transakcija vašeg programa lojalnosti. Servisni nivo je skup web servisa
+                          koji na siguran i pouzdan način komuniciraju između vašeg POS sistema i web servera na
+                          kojem je smještena baza podataka
+                      </li>
+                      <li> korisničkog portala i mobilne aplikacije namjenje krajnjim kupcima za praćenje
+                          vlastitih transakcija i ostvarenih i realizovanih boniteta u okviru programa lojalnosti.
+                      </li>
+                  </ul>
+
+                  <p>NAČIN REALIZACIJE EUROBIT PROGRAMA LOJALNOSTI</p>
+                  <p>Sve tehničke i softverske pretpostavke za početak realizacije Eurobit programa lojalnosti su
+                      već implementirane u vašem postojećem poslovnom informacionom sistemu. Nisu potrebne nikakve
+                      dodatne investicije sa stanovišta opreme, softverskih licenci ili infrastrukturnih zahvata.
+                      Dovoljno je samo da odlučite kada početi sa realizacijom.
+                      Sve ostale marketinške i druge aktivnosti vezane za početak primjene programa lojalnosti
+                      (nabavka kartica, štampanje, oglašavanje i slično) možete po vašoj volji organizovati
+                      samostalno uz našu pomoć ili prepustiti nama.</p>
+
+                  <img class="img-responsive img-centered" src="img/lcp2.jpg" alt="">
+
+                  <p>ŠTA OMOGUĆAVA EUROBIT PROGRAM LOJALNOSTI</p>
+                  <p>Program lojalnosti koji smo osmislili i razvili za vas omogućava vam:</p>
+                  <ul>
+                      <li> da samostalno ili u konzorciju sa vašim poslovnim partnerima realizujete jedinstven
+                          program lojalnosti čije ćete vrijeme trajanja i način primjene sami definisati
+                      </li>
+                      <li> da koristite neke od mogućih varijanti programa lojalnosti (skupljanje bodova, popust
+                          pri prodaji, odgođeno plaćanje, ...)
+                      </li>
+                      <li> da sami definišete rabatne politike i način korištenja boniteta vaših kupaca</li>
+                      <li> da koristite podatke o vašim kupcima i njihovim navikama za vlastite promotivne
+                          aktivnosti
+                      </li>
+                  </ul>
+                  <p>Osmislili smo i razvili takav program lojalnosti da možete samostalno da ga realizujete, pri
+                      čemu ste vi i nosioci programa lojalnosti i vlasnici potrošačkih kartica i obveznici za
+                      bonitete date kupcima, ali je isti tako moguće da isti program lojalnosti dijelite sa vašim
+                      poslovnim partnerima, pri čemu možete koristiti ili samo iste potrošačke kartice i podatke o
+                      kupcima, pri čemu bonitetne obaveze prema kupcima ostvarene u prodajnim objektima konzorcija
+                      pokriva svaki član konzorcija za sebe, ili je moguć i najširi oblik konzorcija pri čemu
+                      kupac bonitete ostvarene u prodajnim objektima bilo kog člana konzorcija može da iskoristi
+                      opet u prodajnim objektima bilo kog člana konzorcija. U slučaju dijeljenja i obaveze prema
+                      bonitetima periodično (mjesečno) bi se radilo poravnanje između članica konzorcija. </p>
+
+                  <p>Potrošačke kartice možete realizovati samostalno sa svim elementima vlastitog dizajna (uz
+                      našu pomoć oko tehničkih karakteristika), ali možete prepustiti i nama uz minimalnu naknadu
+                      za cijenu kartice.</p>
+
+              </div>
+          </div>
+
+      </div>
+  </section><!-- #loyalty -->
+
+  <section id="wms" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" id="closebtnWms">&times;</a>
+      <div class="container">
+          <header class="section-header ">
+              <h3>Loyalty Card Program</h3>
+              <p>Warehouse management system</p>
+          </header>
+          <div class="row">
+              <div class="col-md-8 offset-md-2 text-center">
+
+                  <p>Eurobit Warehouse Management System predstavlja mobilnu aplikaciju za upravljanjem
+                      dokumentima i stanjem artikala u skladištu. Krajnji korisnici aplikacije su zaposlenici u
+                      skladištu i u skladu s tim je dizajniran interfejs kao set koraka/akcija prilikom kreiranja
+                      raznih tipova dokumenata. Osnovni cilj aplikacije je ubrzati proces inventure artikala u
+                      sistem, kao i veliko smanjenje mogućnosti greške koja se može dogoditi u standardnim
+                      prepisivanjima/prekucavanjima unosa. Veća kontrola i pouzdanost kod ovakvog prenosa
+                      informacija oko velikih količina robe u skladištima donosi mnoge prednosti u nastavku
+                      poslovanja kolektiva koji je koristi. U sklopu aplikacije moguće je kreirati razne tipove
+                      dokumenata koji se sastoje od artikala i popratnih podataka o dobavljaču, količini,
+                      jedinicama mjera i sl.</p>
+                  <img class="img-responsive img-centered" src="img/ewms1.png" alt="">
+                  <p>Aplikacija ima mogućnost rada u offline režimu uz odgođeno slanje podataka na servis što je i
+                      velika prednost kod skladišta koja nemaju internet konekciju. Uz redovnu sinhronizaciju nudi
+                      najsvježije podatke o popratnim podacima za kreiranje dokumenta i samim tim kompletan proces
+                      propagiranja dokumenata kroz sistem je precizniji.</p>
+
+              </div>
+          </div>
+
+      </div>
+  </section><!-- #wms -->
 
 
   <!-- JavaScript Libraries -->
@@ -1042,26 +2559,17 @@
 
   <script>
  $(document).ready(function(){
-     $("#popup").click(function(){
-         $("#servicess").slideDown( 1000)
-     });
-     $("#closebtn").click(function(){
-         $("#servicess").slideUp();
-     });
-     $(".mobile-sales-link").click(function() {
-         $("#test").slideDown( 1000)
-     });
-     $("#orderLink").click(function(){
-         $("#order").slideDown( 1000)
-     });
-     $("#closebtnOrder").click(function(){
-         $("#order").slideUp();
-     });
+
  });
     $( document ).on( 'keydown', function ( e ) {
-     if ( e.keyCode === 27 ) { // ESC
-         $("#servicess").slideUp();
+     if ( e.keyCode === 27 ) {
+         $("#services").slideUp();
          $("#order").slideUp();
+         $("#erp").slideUp();
+         $("#clientsTable").slideUp();
+         $("#web").slideUp();
+         $("#mobileModal").slideUp();
+         $('body').css('overflow-y','scroll')
      }
  });
   </script>

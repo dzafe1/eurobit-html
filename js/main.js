@@ -170,4 +170,116 @@ jQuery(document).ready(function( $ ) {
     items: 1
   });
 
+    $("#popup").click(function(){
+        $('body').css('overflow-y','hidden');
+        $("#services").slideDown( 1000)
+    });
+    $("#closebtn").click(function(){
+        $('body').css('overflow-y','scroll');
+        $("#services").slideUp();
+    });
+    $(".mobile-sales-link").click(function() {
+        $('body').css('overflow-y','hidden');
+        $("#test").slideDown( 1000)
+    });
+    $("#orderLink").click(function(){
+        $('body').css('overflow-y','hidden');
+        $("#order").slideDown( 1000)
+    });
+    $("#closebtnOrder").click(function(){
+        $('body').css('overflow-y','scroll');
+        $("#order").slideUp();
+    });
+    $("#clientsTableLink").click(function(){
+        $('body').css('overflow-y','hidden');
+        $("#clientsTable").slideDown( 1000)
+    });
+    $("#closebtnClients").click(function(){
+        $('body').css('overflow','scroll');
+        $("#clientsTable").slideUp();
+    });
+    $("#erpLink").click(function(){
+        $('body').css('overflow-y','hidden');
+        $("#erp").slideDown( 1000)
+    });
+    $("#erpLink2").click(function(){
+        $('body').css('overflow-y','hidden');
+        $("#erp").slideDown( 1000)
+    });
+    $("#closebtnErp").click(function(){
+        $('body').css('overflow-y','scroll');
+        $("#erp").slideUp();
+    });
+    $("#bussinesLink").click(function(){
+        $('body').css('overflow-y','hidden');
+        $("#bussines").slideDown( 1000)
+    });
+    $("#closebtnBussines").click(function(){
+        $('body').css('overflow-y','scroll');
+        $("#bussines").slideUp();
+    });
+    $("#webLink").click(function(){
+        $('body').css('overflow-y','hidden');
+        $("#web").slideDown( 1000)
+    });
+    $("#closebtnWeb").click(function(){
+        $('body').css('overflow-y','scroll');
+        $("#web").slideUp();
+    });
+    $("#mobileModalLink").click(function(){
+        $('body').css('overflow-y','hidden');
+        $("#mobileModal").slideDown( 1000)
+    });
+    $("#mobileModalTestLink").click(function(){
+        $('body').css('overflow-y','hidden');
+        $("#mobileModal").slideDown( 1000)
+    });
+    $("#closebtnMobile").click(function(){
+        $('body').css('overflow-y','scroll');
+        $("#mobileModal").slideUp();
+    });
+    /*******************************/
+    $("#eradLink").click(function(){
+        $('body').css('overflow-y','hidden');
+        $("#erad").slideDown( 1000)
+    });
+    $("#closebtnErad").click(function(){
+        $('body').css('overflow-y','scroll');
+        $("#erad").slideUp();
+    });
+    $("#sportsportLink").click(function(){
+        $('body').css('overflow-y','hidden');
+        $("#sportsport").slideDown( 1000)
+    });
+    $("#closebtnSport").click(function(){
+        $('body').css('overflow-y','scroll');
+        $("#sportsport").slideUp();
+    });
+    $("#loyaltyLink").click(function(){
+        $('body').css('overflow-y','hidden');
+        $("#loyalty").slideDown( 1000)
+    });
+    $("#closebtnLoyalty").click(function(){
+        $('body').css('overflow-y','scroll');
+        $("#loyalty").slideUp();
+    });
+    $("#wmsLink").click(function(){
+        $('body').css('overflow-y','hidden');
+        $("#wms").slideDown( 1000)
+    });
+    $("#closebtnWms").click(function(){
+        $('body').css('overflow-y','scroll');
+        $("#wms").slideUp();
+    });
 });
+$( document ).on( 'keydown', function ( e ) {
+    if ( e.keyCode === 27 ) {
+        $("#services").slideUp();
+        $("#order").slideUp();
+        $("#erp").slideUp();
+        $("#clientsTable").slideUp();
+        $("#web").slideUp();
+        $("#mobileModal").slideUp();
+        $('body').css('overflow-y','scroll')
+
+    }});
