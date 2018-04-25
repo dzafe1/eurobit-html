@@ -1,5 +1,15 @@
 jQuery(document).ready(function( $ ) {
 
+    $.urlParam = function(name){
+        var results = new RegExp('[\?&]' + name + '=([^&#]*)').exec(window.location.href);
+        if (results==null){
+            return null;
+        }
+        else{
+            return decodeURI(results[1]) || 0;
+        }
+    }
+
   // Back to top button
   $(window).scroll(function() {
     if ($(this).scrollTop() > 100) {
@@ -198,6 +208,10 @@ jQuery(document).ready(function( $ ) {
         $('body').css('overflow','scroll');
         $("#clientsTable").slideUp();
     });
+    if ($.urlParam('erp') != null) {
+        $('body').css('overflow-y','hidden');
+        $("#erp").slideDown( 1000)
+    }
     $("#erpLink").click(function(){
         $('body').css('overflow-y','hidden');
         $("#erp").slideDown( 1000)
@@ -220,7 +234,7 @@ jQuery(document).ready(function( $ ) {
     });
     $("#webLink").click(function(){
         $('body').css('overflow-y','hidden');
-        $("#web").slideDown( 1000)
+        $("#web").slideDown( 1000);
     });
     $("#closebtnWeb").click(function(){
         $('body').css('overflow-y','scroll');
@@ -255,21 +269,91 @@ jQuery(document).ready(function( $ ) {
         $('body').css('overflow-y','scroll');
         $("#sportsport").slideUp();
     });
-    $("#loyaltyLink").click(function(){
-        $('body').css('overflow-y','hidden');
-        $("#loyalty").slideDown( 1000)
-    });
     $("#closebtnLoyalty").click(function(){
         $('body').css('overflow-y','scroll');
         $("#loyalty").slideUp();
     });
+
+    $("#serviceConsultingLink").click(function(){
+        $('body').css('overflow-y','hidden');
+        $("#serviceConsulting").slideDown( 1000)
+    });
+    $("#closebtnServiceConsulting").click(function(){
+        $('body').css('overflow-y','scroll');
+        $("#serviceConsulting").slideUp();
+    });
+    //Links that are on services section
+    $("#consultingLink").click(function(){
+        $('body').css('overflow-y','hidden');
+        $("#services").fadeOut(700);
+        $("#consulting").slideDown( 1000);
+
+    });
+    $("#closebtnConsulting").click(function(){
+        $('body').css('overflow-y','scroll');
+        $("#consulting").slideUp();
+    });
+    $("#webLink2").click(function(){
+        $('body').css('overflow-y','hidden');
+        $("#services").fadeOut(700);
+        $("#web").slideDown( 1000);
+    });
+    $("#erpLink3").click(function(){
+        $('body').css('overflow-y','hidden');
+        $("#services").fadeOut(700);
+        $("#erp").slideDown( 1000);
+    });
+    $("#mobileModalLink2").click(function(){
+        $('body').css('overflow-y','hidden');
+        $("#services").fadeOut(700);
+        $("#mobileModal").slideDown( 1000);
+    });
+    $("#bussinesLink2").click(function(){
+        $('body').css('overflow-y','hidden');
+        $("#services").fadeOut(700);
+        $("#bussines").slideDown( 1000);
+    });
+    $("#eradLink2").click(function(){
+        $('body').css('overflow-y','hidden');
+        $("#services").fadeOut(700);
+        $("#erad").slideDown( 1000);
+    });
+    $("#loyaltyLink").click(function(){
+        $('body').css('overflow-y','hidden');
+        $("#services").fadeOut(700);
+        $("#loyalty").slideDown( 1000);
+    });
+    $("#fiskalniLink").click(function(){
+        $('body').css('overflow-y','hidden');
+        $("#services").fadeOut(700);
+        $("#fiskalni").slideDown( 1000);
+    });
+    $("#closebtnFiskalni").click(function(){
+        $('body').css('overflow-y','scroll');
+        $("#fiskalni").slideUp();
+    });
+    $("#voipLink").click(function(){
+        $('body').css('overflow-y','hidden');
+        $("#services").fadeOut(700);
+        $("#voip").slideDown( 1000);
+    });
+    $("#closebtnVoip").click(function(){
+        $('body').css('overflow-y','scroll');
+        $("#voip").slideUp();
+    });
     $("#wmsLink").click(function(){
         $('body').css('overflow-y','hidden');
+        $("#services").fadeOut(700);
         $("#wms").slideDown( 1000)
     });
     $("#closebtnWms").click(function(){
         $('body').css('overflow-y','scroll');
         $("#wms").slideUp();
+    });
+    $("#serviceConsultingLink2").click(function(){
+        $('body').css('overflow-y','hidden');
+        $("#services").fadeOut(700);
+        $("#serviceConsulting").slideDown( 1000)
     });
 });
 $( document ).on( 'keydown', function ( e ) {
@@ -280,6 +364,35 @@ $( document ).on( 'keydown', function ( e ) {
         $("#clientsTable").slideUp();
         $("#web").slideUp();
         $("#mobileModal").slideUp();
+        $("#bussines").slideUp();
+        $("#erad").slideUp();
+        $("#sportsport").slideUp();
+        $("#loyalty").slideUp();
+        $("#wms").slideUp();
+        $("#serviceConsulting").slideUp();
+        $("#consulting").slideUp();
+        $("#fiskalni").slideUp();
+        $("#voip").slideUp();
         $('body').css('overflow-y','scroll')
-
-    }});
+    }
+});
+$(document).ready(function(){
+    $( ".backBtn" ).click(function() {
+        $("#services").slideUp();
+        $("#order").slideUp();
+        $("#erp").slideUp();
+        $("#clientsTable").slideUp();
+        $("#web").slideUp();
+        $("#mobileModal").slideUp();
+        $("#bussines").slideUp();
+        $("#erad").slideUp();
+        $("#sportsport").slideUp();
+        $("#loyalty").slideUp();
+        $("#wms").slideUp();
+        $("#serviceConsulting").slideUp();
+        $("#consulting").slideUp();
+        $("#fiskalni").slideUp();
+        $("#voip").slideUp();
+        $('body').css('overflow-y','scroll');
+    });
+});
